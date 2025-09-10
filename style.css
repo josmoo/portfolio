@@ -1,0 +1,23 @@
+body{
+    margin: 0px;
+}
+
+body > * {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header, .projectsContainer{
+    background-color: #0f280f;
+    color: #AACC20;
+}
+
+.resumeContainer{
+    background-color: #AACC20;
+    color: #0f280f;
+}
+
+h1{
+    margin: 0px;
+
+}
