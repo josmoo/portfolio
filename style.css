@@ -1,5 +1,6 @@
 body{
     margin: 0px;
+    background-color: #F4F9FF;
 }
 
 body > * {
@@ -8,16 +9,44 @@ body > * {
 }
 
 .header, .projectsContainer{
-    background-color: #0f280f;
-    color: #AACC20;
+    background-color: #14191F;
+    color: #F4F9FF;
 }
 
-.resumeContainer{
-    background-color: #AACC20;
-    color: #0f280f;
+.welcomeContainer, .resumeContainer{
+    background-color: #F4F9FF;
+    color: #14191F;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    padding: .1em .8em;
+}
+
+.header > * {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .8em;
+}
+
+
+.navigationLinkContainer{
+
+}
+
+.socialLinkContainer{
+
+}
+
+.socialLinkContainer > a > img {
+    height: 2rem;
+    width: 2rem;
 }
 
 h1{
     margin: 0px;
-
 }
