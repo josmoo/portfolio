@@ -1,0 +1,1 @@
+import SimpleParallax from "simple-parallax-js/vanilla";
