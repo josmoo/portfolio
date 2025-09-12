@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body{
     margin: 0px;
     background-color: #F4F9FF;
@@ -48,12 +52,143 @@ body > * {
 }
 
 .introductionContainer{
-
 }
 
-.introductionContainer > img {
+.heroImageContainer > img {
     width: 100%;
     object-fit: cover;
+}
+
+//project cards
+.projectsContainer{
+    display:flex;
+    flex-direction:row;
+}
+
+.projectCard{
+    cursor: pointer;
+    aspect-ratio: 1;
+    width: 22%;
+}
+
+.projectCard--expanded{
+    cursor: default;
+}
+
+.projectCard__content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 16px;
+    border-radius: 5px;
+    background: #14191F;
+}
+
+.projectCard--expanded .projectCard__content{
+    position: fixed;
+    z-index; 10;
+    top:0;
+    right:0;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: auto;
+}
+
+.projectCard__preview {
+    border-radius: 5px;
+    width: 120px;
+    object-fit:cover; //is this necessary?
+    transform-origin: 0 0;
+}
+
+.projectCard--expanded .projectCard__preview{
+    width: 400px;
+    border-radius: 5px;
+}
+
+.projectCard__title {
+  font-size: 20px;
+  font-weight: bold;
+  transform-origin: 0 0;
+  line-height: 1;
+}
+
+.projectCard--expanded .projectCard__title {
+  font-size: 30px;
+}
+
+
+.projectCard__userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.projectCard--expanded .projectCard__userInfo {
+  align-items: flex-start;
+}
+
+.projectCard__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px 14px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.projectCard--expanded .projectCard__header{
+    flex-direction: row;
+}
+
+.projectCard__close {
+    position: absolute;
+    right: 0;
+    transform: translate(100%, 0);
+    top: 0;
+    z-index: 10;
+    opacity: 0;
+    pointer-events: none;
+    background: none;
+    border: none;
+    width: 44px;
+    height: 44px;
+    color: white;
+    padding: 10px;
+}
+
+.projectCard--expanded .projectCard__close{
+    transition: all 0.3s ease 0.3s;
+    opacity: 1;
+    pointer-events: all;
+    transform: translate(0,0); //todo WHY? is this just the animation from offscreen when it's clicked?
+}
+
+.projectCard__body{
+    opacity: 0;
+    height: 0;
+    transform-origin: 0 0;
+}
+
+.projectCard--expanded .projectCard__body{
+    max-width: 800px;
+    margin: 20px auto 0;
+    opacity: 1;
+    height: auto;
+}
+
+.projectCard--animatable .projectCard__preview,
+.projectCard--animatable .projectCard__title,
+.projectCard--animatable .projectCard__content,
+.projectCard--animatable .projectCard__body{
+    transition: all 0.5s cubic-bezier(0, 0, 0.21, 1);
 }
 
 h1{
