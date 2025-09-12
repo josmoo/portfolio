@@ -28,7 +28,7 @@ function setup() {
 function expand(){
     getCardContent().addEventListener('transitionend', onExpandTransitionEnd);
 
-    //disablePageScroll(); //this is only necessary if we aren't doing hover as well
+    disablePageScroll(); 
     
     collectInitialProperties();
 
@@ -155,25 +155,33 @@ function startCollapsing() {
 }
 
 function onCollapseTransitionEnd(e) {
-  const cardContent = getCardContent()
-  if (e.target !== cardContent) return
+  const cardContent = getCardContent();
+  if (e.target !== cardContent) return;
 
-  expandedCard.classList.remove('projectCard--animatable')
-  expandedCard.classList.remove('projectCard--expanded')
+  expandedCard.classList.remove('projectCard--animatable');
+  expandedCard.classList.remove('projectCard--expanded');
 
-  cardContent.removeEventListener('transitionend', onCollapseTransitionEnd)
+  cardContent.removeEventListener('transitionend', onCollapseTransitionEnd);
 
-  removeStyles()
-  //enablePageScroll()
+  removeStyles();
+  enablePageScroll();
 
-  cleanup()
+  cleanup();
+}
+
+function disablePageScroll(){
+  document.body.style.overflow = 'hidden';
+}
+
+function enablePageScroll(){
+  document.body.style.overflow = '';
 }
 
 function cleanup() {
-  expandedCard = null
-  cardClip = null
-  initialProperties = []
-  finalProperties = []
+  expandedCard = null;
+  cardClip = null;
+  initialProperties = [];
+  finalProperties = [];
 }
 
 setup();
