@@ -14,14 +14,15 @@ body > * {
     padding: 0px;
 }
 
-.header, .projectsContainer{
+.header, .introductionContainer{
     background-color: #14191F;
     color: #F4F9FF;
 }
 
-.welcomeContainer, .resumeContainer{
+.projectsContainer, .resumeContainer{
     background-color: #F4F9FF;
     color: #14191F;
+    flex-direction: column;
 }
 
 .header{
@@ -56,24 +57,32 @@ body > * {
 .introductionContainer{
 }
 
+.heroImageContainer{
+}
+
 .heroImageContainer > img {
     width: calc(100vw - var(--scrollbarWidth));
     height: auto;
     object-fit: cover; /* probably needs to change when parallax is added*/
 }
 
-body > .projectsContainer{
+.projectCardContainer{
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
-    gap: 200px;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+    gap: 1%;
     width: 100%;
 }
 
 .projectCard{
     cursor: pointer;
     aspect-ratio: 1;
-    width: 22%;
+    min-width: 320px;
+    width: 30%;
+    margin: 1%;
 }
 
 .projectCard--expanded{
@@ -91,6 +100,7 @@ body > .projectsContainer{
     overflow: hidden;
     padding: 16px;
     border-radius: 5px;
+    color: #F4F9FF;
     background: #14191F;
 }
 
@@ -107,15 +117,15 @@ body > .projectsContainer{
 
 .projectCard__preview {
     border-radius: 5px;
-    width: 120px;
-    height: 120px;
+    width: 256px;
+    height: 256px;
     object-fit:cover;
     transform-origin: 0 0;
 }
 
 .projectCard--expanded .projectCard__preview{
-    width: 120px;
-    header: 120px;
+    width: 256px;
+    header: 256px;
     border-radius: 5px;
 }
 
@@ -145,12 +155,17 @@ body > .projectsContainer{
 .projectCard__header {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    align-items: center !important;
     gap: 10px 14px;
     max-width: 800px;
     width: 100%;
     height: 100%;
     margin: 0 auto;
+}
+
+.projectCard__header > * {
+
 }
 
 .projectCard--expanded .projectCard__header{
