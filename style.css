@@ -4,6 +4,7 @@
 
 body{
     margin: 0px;
+    width: calc(100vw - var(--scrollbarWidth));
     background-color: #F4F9FF;
 }
 
@@ -56,9 +57,9 @@ body > * {
 }
 
 .heroImageContainer > img {
-    width: 100%;
+    width: calc(100vw - var(--scrollbarWidth));
     height: auto;
-    object-fit: cover;
+    object-fit: cover; /* probably needs to change when parallax is added*/
 }
 
 body > .projectsContainer{

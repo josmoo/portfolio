@@ -1,9 +1,13 @@
 //import SimpleParallax from "simple-parallax-js/vanilla";
 
+document.documentElement.style.setProperty('--scrollbarWidth',
+   (window.innerWidth - document.documentElement.clientWidth) + "px");
+   
 let expandedCard;
 let initialProperties = [];
 let finalProperties = [];
 let cardClip;
+
 
 function setup() {
   document.addEventListener('click', (e) => {
