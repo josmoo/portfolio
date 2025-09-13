@@ -62,7 +62,7 @@ body > * {
 
 .heroImageContainer > img {
     width: calc(100vw - var(--scrollbarWidth));
-    height: auto;
+    height: 64vh;
     object-fit: cover; /* probably needs to change when parallax is added*/
 }
 
@@ -192,7 +192,7 @@ body > * {
     transition: all 0.3s ease 0.3s;
     opacity: 1;
     pointer-events: all;
-    transform: translate(0,0); //todo WHY? is this just the animation from offscreen when it's clicked?
+    transform: translate(0,0); 
 }
 
 .projectCard__body{
