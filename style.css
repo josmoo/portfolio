@@ -6,7 +6,7 @@
 body{
     margin: 0px;
     width: calc(100vw - var(--scrollbarWidth));
-    background-color: #F4F9FF;
+    background-color: #14191F;
 }
 
 body > * {
@@ -87,6 +87,7 @@ body > * {
     padding: 1rem;
     width: 100%;
     color: #14191F;
+    animation: fadeIn 2s forwards;
 }
 
 .introductionContainer{
@@ -126,13 +127,12 @@ body > * {
     align-items: center;
     padding: 4%;
     gap: 1%;
-    width: 100%;
 }
 
 .projectCard{
     cursor: pointer;
     aspect-ratio: 1;
-    min-width: 320px;
+    min-width: 384px;
     width: 24%;
     margin: 1%;
 }
@@ -176,9 +176,6 @@ body > * {
 }
 
 .projectCard--expanded .projectCard__preview{
-    width: 256px;
-    header: 256px;
-    border-radius: 5px;
 }
 
 .projectCard__title {
@@ -211,8 +208,6 @@ body > * {
     align-items: center !important;
     gap: 10px 14px;
     max-width: 800px;
-    width: 100%;
-    height: 100%;
     margin: 0 auto;
 }
 
@@ -226,25 +221,23 @@ body > * {
 
 .projectCard__close {
     position: absolute;
-    right: 0;
-    transform: translate(100%, 0);
-    top: 0;
-    z-index: 10;
+    right: 5vw;
+    top: 5vh;
+    font-size: 1.8vw;
+    z-index: 11;
     opacity: 0;
     pointer-events: none;
-    background: none;
+    cursor: pointer;
+    color: #F4F9FF;
+    background:none;
     border: none;
-    width: 44px;
-    height: 44px;
-    color: white;
-    padding: 10px;
+    padding: 0px;
 }
 
 .projectCard--expanded .projectCard__close{
     transition: all 0.3s ease 0.3s;
     opacity: 1;
     pointer-events: all;
-    transform: translate(0,0); 
 }
 
 .projectCard__body{
@@ -257,7 +250,6 @@ body > * {
     max-width: 800px;
     margin: 20px auto 0;
     opacity: 1;
-    height: auto;
 }
 
 .projectCard--animatable .projectCard__preview,
@@ -269,4 +261,13 @@ body > * {
 
 h1{
     margin: 0px;
+}
+
+.fadeIn{
+    opacity: 0;
+    transition: opacity 678ms ease-in;
+}
+
+.fadeIn.appear{
+    opacity: 1;
 }
