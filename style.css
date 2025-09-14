@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -29,8 +30,8 @@ body > * {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 3.6em;
-    padding: .1em .8em;
+    height: 3.6rem;
+    padding: .1rem .8rem;
     position: sticky;
     top: 0;
     z-index: 9;
@@ -57,13 +58,10 @@ body > * {
     width: 2rem;
 }
 
-.introductionContainer{
-}
-
 .heroImageContainer{
     background-image: url("./img/antihero.jpg");
     width: calc(100vw - var(--scrollbarWidth));
-    height: 74vh;
+    height: calc(100vh - 3.6rem);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -89,6 +87,35 @@ body > * {
     padding: 1rem;
     width: 100%;
     color: #14191F;
+}
+
+.introductionContainer{
+    height: 76vh;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 4vh 22vw;
+    gap: 6vh;
+    line-height: 1.44;
+}
+
+.introductionContainer > h1 {
+    font-size: clamp(4rem, 6vw + .05rem, 7rem);
+}
+
+.bioContainer > p {
+    font-size: clamp(1rem, 1vw + .05rem, 2.2rem);
+}
+
+
+.projectsContainer{
+    justify-content: center;
+    text-align: center;
+    padding: 4rem;
+}
+
+.projectsContainer > h1 {
+    font-size: clamp(2rem, 4vw + .05rem, 4rem);
 }
 
 .projectCardContainer{
@@ -124,7 +151,7 @@ body > * {
     align-items: center;
     overflow: hidden;
     padding: 1em;
-    border-radius: 5px;
+    border-radius: 10px;
     color: #F4F9FF;
     background: #14191F;
 }
