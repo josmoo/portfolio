@@ -27,7 +27,6 @@
     </div>
     <div class = "introductionContainer">
         <h1 class = "welcomeText fadeIn">Welcome!</h1>
-
         <div class = "bioContainer fadeIn">
             <p>Hi! I'm Josh, a graduate from UMKC with a Bachelor of Science in Computer Science. </p>
             <p> From my experience 
@@ -37,18 +36,16 @@
                 see and would like to know more, feel free to reach out! I'd love to talk. </p>
         </div>
     </div>
-    <div class = "projectsContainer">
+    <div class = "projectsContainer fadeIn">
         <h1 class = "fadeIn">Here's some of my projects:</h1>
         <h3 class = "fadeIn">Click on one to learn more!</h3>
-        <div class = "projectCardContainer">
-            <div class = "projectCard fadeIn">
+        <div class = "projectCardsContainer">
+
+            <div class = "projectCard" id = "websiteCard">
                 <div class = "projectCard__content">
-                    <button class = "projectCard__close">X</button>
-                    <div class = "projectCard__header">
-                        <img class = "projectCard__preview jsAnimatable" src = "./img/portfolio.png">
-                        <h2 class = "projectCard__title jsAnimatable">This website!</h2>
-                    </div>
-                    <div class = "projectCard__body jsAnimatable">
+                    <h2 class = "projectCard__title">This website!</h2>
+                    <div class = "projectCard__body">
+                        <img class = "projectCard__preview" src = "./img/portfolio.png">
                         <p>This website was entirely made by myself with html, css, and javascript. It's
                             open source, and you can check out the repository
                             <a href= "https://github.com/josmoo/portfolio" target = "_blank">here</a>
@@ -57,14 +54,11 @@
                 </div>
             </div>
 
-            <div class = "projectCard fadeIn">
+            <div class = "projectCard" id = "ytSearchCard">
                 <div class = "projectCard__content">
-                    <button class = "projectCard__close">X</button>
-                    <div class = "projectCard__header">
-                        <img class = "projectCard__preview jsAnimatable" src = "./img/ytplaylist.png">
-                        <h2 class = "projectCard__title jsAnimatable">A youtube playlist searcher!</h2>
-                    </div>
-                    <div class = "projectCard__body jsAnimatable">
+                    <h2 class = "projectCard__title">A youtube playlist searcher!</h2>
+                    <div class = "projectCard__body">
+                        <img class = "projectCard__preview" src = "./img/ytplaylist.png">
                         <p>I made a web application from plain html, css, and javascript that accesses YouTube's API to allow users to search a playlist.</p>
                         <p>Inspired by:</p>
                         <ul>
@@ -77,15 +71,12 @@
                     </div>
                 </div>
             </div>
-
-            <div class = "projectCard fadeIn">
+        
+            <div class = "projectCard" id = "alerterCard">
                 <div class = "projectCard__content">
-                    <button class = "projectCard__close">X</button>
-                    <div class = "projectCard__header">
-                        <img class = "projectCard__preview jsAnimatable" src = "./img/aocalerter.png">
-                        <h2 class = "projectCard__title jsAnimatable">AoC Alerter</h2>
-                    </div>
-                    <div class = "projectCard__body jsAnimatable">
+                    <h2 class = "projectCard__title">AoC Alerter</h2>
+                    <div class = "projectCard__body">
+                        <img class = "projectCard__preview" src = "./img/aocalerter.png">
                         <p>I actively maintain a plugin for an open source client called RuneLite. This plugin was 
                             inspired by my own frustrations, but also frustrations of friends. It is currently sitting 
                             at 6,500+ active installs, and users sometimes leave thanks or suggestions for improvements, 
@@ -94,11 +85,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- <div class = "projectCard">
-                <h3>Lorem</h3>
-                <p>ipsum</p>
-            </div> -->
         </div>
     </div>
     <div class = "resumeContainer">
