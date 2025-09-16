@@ -28,15 +28,9 @@ body > * {
     padding: 0px;
 }
 
-.header, .introductionContainer{
+.header, .introductionContainer, .resumeContainer{
     background-color: #14191F;
     color: #F4F9FF;
-}
-
-.projectsContainer, .resumeContainer{
-    background-color: #F4F9FF;
-    color: #14191F;
-    flex-direction: column;
 }
 
 .header{
@@ -121,14 +115,15 @@ body > * {
     font-size: clamp(4rem, 6vw + .05rem, 7rem);
 }
 
-.bioContainer > p {
-    font-size: clamp(1rem, 1vw + .05rem, 2.2rem);
-}
 
 .projectsContainer{
+    background-color: #F4F9FF;
+    color: #14191F;
+    flex-direction: column;
     text-align: center;
     align-items: center;
     padding: 4rem;
+    
 }
 
 .projectsContainer > h1 {
@@ -181,7 +176,8 @@ body > * {
 }
 
 #alerterCard .projectCard__title,
-#alerterCard p {
+#alerterCard p,
+#alerterCard a {
     font-family: "osrs", "osrs--small";
 }
 
@@ -211,9 +207,22 @@ body > * {
     width: auto;
 }
 
+.resumeContainer{
+    flex-direction: column;
+}
+
 
 h1{
     margin: 0px;
+}
+
+ul{
+    padding: 1em;
+}
+
+p{
+    margin-bottom: 1em;
+    font-size: clamp(.5rem, 1vw + .2rem, 2rem);
 }
 
 .fadeIn{
