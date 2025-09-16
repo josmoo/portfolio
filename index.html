@@ -10,17 +10,17 @@
 <body>
     <div class = "header">
         <div class = "navigationLinkContainer">
-            <h4>Home</h4>
-            <h4>Projects</h4>
-            <h4>Resume</h4>
+            <h4><a href="#home">Home</a></h4>
+            <h4><a href="#projects">Projects</a></h4>
+            <h4><a href="#resume">Resume</a></h4>
         </div>
         <div class = "socialLinkContainer">
-            <h4>jomimodev@gmail.com</h4>
+            <h4>josmoodev@gmail.com</h4>
             <a href = "https://github.com/josmoo"><img src ="./img/github.png"></a>
             <a href = "https://www.linkedin.com/in/jomimo"><img src ="./img/linkedin.png"></a>
         </div>
     </div>
-    <div class = "heroImageContainer">
+    <div class = "heroImageContainer" id = "home">
         <div class = "heroImageMask">
             <h1 class = "nameText fadeIn">Joshua Moore</h1>
         </div>
@@ -36,20 +36,25 @@
                 see and would like to know more, feel free to reach out! I'd love to talk. </p>
         </div>
     </div>
-    <div class = "projectsContainer fadeIn">
+    <div class = "projectsContainer" id = "projects">
         <h1 class = "fadeIn">Here's some of my projects:</h1>
-        <h3 class = "fadeIn">Click on one to learn more!</h3>
-        <div class = "projectCardsContainer">
+        <h3 class = "fadeIn">Hover over one to learn more!</h3>
+        <div class = "projectCardsContainer fadeIn">
 
             <div class = "projectCard" id = "websiteCard">
                 <div class = "projectCard__content">
                     <h2 class = "projectCard__title">This website!</h2>
                     <div class = "projectCard__body">
                         <img class = "projectCard__preview" src = "./img/portfolio.png">
-                        <p>This website was entirely made by myself with html, css, and javascript. It's
-                            open source, and you can check out the repository
-                            <a href= "https://github.com/josmoo/portfolio" target = "_blank">here</a>
-                            .</p>
+                        <div class = "projectCard__bio">
+                            <p>This website was entirely made by myself with html, css, and javascript. It's
+                                open source, and you can check out the repository
+                                <a href= "https://github.com/josmoo/portfolio" target = "_blank">here</a>.</p>
+                            <p>Building this website gave me the chance to practice more web development. It was amazing to learn more about html and css! I had the 
+                                opportunity BEM and FLIP animations, although I didn't fully conform to the former. I also ended up switching off of FLIP animations to CSS 
+                                animations to make the website more performative. Nonetheless, I thoroughly enjoyed learning about both. There's still a few bugs to be solved,  
+                                improvements to be made, and hopefully more projects to add! Thanks for checking it out ♥</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -59,15 +64,18 @@
                     <h2 class = "projectCard__title">A youtube playlist searcher!</h2>
                     <div class = "projectCard__body">
                         <img class = "projectCard__preview" src = "./img/ytplaylist.png">
-                        <p>I made a web application from plain html, css, and javascript that accesses YouTube's API to allow users to search a playlist.</p>
-                        <p>Inspired by:</p>
-                        <ul>
-                            <li>Countless frustrations trying to find <em><b>that one recipe</b></em> in my huge cooking playlist</li>
-                            <li>Being unable to pinpoint the exact exercise video I've been looking for</li>
-                            <li>And even just random <a href="https://www.reddit.com/r/YoutubeMusic/comments/12xq5i0/can_i_search_in_my_own_playlist/" target="_blank">angry reddit threads</a></li>
-                        </ul>
-                        <p>It's free to use, check it out <a href="https://josmoo.github.io/yt-playlist-searcher/" target="_blank">here</a>!</p>
-                        <p>Or if you're more interested in the source code, <a href= "https://github.com/josmoo/yt-playlist-searcher" target="_blank">here's the repository</a>.</p> 
+                        <div class = "projectCard__bio">
+                            <p>I made a web application from plain html, css, and javascript that accesses YouTube's API to allow users to search a playlist.</p>
+                            <p>Inspired by:</p>
+                            <ul>
+                                <li>Countless frustrations trying to find <em><b>that one recipe</b></em> in my huge cooking playlist</li>
+                                <li>Being unable to pinpoint the exact exercise video I've been looking for</li>
+                                <li>And even just random <a href="https://www.reddit.com/r/YoutubeMusic/comments/12xq5i0/can_i_search_in_my_own_playlist/" target="_blank">angry reddit threads</a></li>
+                            </ul>
+                            <p>It's free to use, check it out <a href="https://josmoo.github.io/yt-playlist-searcher/" target="_blank">here</a>!</p>
+                            <p>Or if you're more interested in the source code, <a href= "https://github.com/josmoo/yt-playlist-searcher" target="_blank">here's the repository</a>.</p> 
+                    
+                        </div>
                     </div>
                 </div>
             </div>
@@ -77,17 +85,20 @@
                     <h2 class = "projectCard__title">AoC Alerter</h2>
                     <div class = "projectCard__body">
                         <img class = "projectCard__preview" src = "./img/aocalerter.png">
-                        <p>I actively maintain a plugin for an open source client called RuneLite. This plugin was 
-                            inspired by my own frustrations, but also frustrations of friends. It is currently sitting 
-                            at 6,500+ active installs, and users sometimes leave thanks or suggestions for improvements, 
-                            which I've appreciated and implemented. The repository can be seen
-                            <a href= "https://github.com/josmoo/AmuletOfChemistryAlerter" target = "_blank">here</a>.</p>
+                        <div class = "projectCard__bio">
+                            <p>I actively maintain a plugin for an open source client called RuneLite. This plugin was 
+                                inspired by my own frustrations, but also frustrations of friends. It is currently sitting 
+                                at 6,500+ active installs, and users sometimes leave thanks or suggestions for improvements, 
+                                which I've appreciated and implemented. The repository can be seen
+                                <a href= "https://github.com/josmoo/AmuletOfChemistryAlerter" target = "_blank">here</a>.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class = "resumeContainer">
+
+    <div class = "resumeContainer" id = "resume">
         <h1>aoihfeoiw</h1>
         <img class = "resumeImage fadeIn" src = "./img/resume.jpg">
         <button>Download</button>

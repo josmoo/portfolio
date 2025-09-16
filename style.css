@@ -40,26 +40,30 @@ body > * {
 }
 
 .header{
-    display: flex;
+    display: flex;  
     flex-direction: row;
     justify-content: space-between;
-    height: 3.6rem;
+
+    font-size: clamp(1rem, 1.74vh + .05rem, 1.8rem);
+    height: 3.2em;
     padding: .1rem .8rem;
     position: sticky;
     top: 0;
     z-index: 9;
 }
 
-.header > * {
+.header  * {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: .8em;
+    text-decoration: none;
+    color: inherit;
 }
 
 
 .navigationLinkContainer{
-
+    text-decoration: none;
 }
 
 .socialLinkContainer{
@@ -145,8 +149,20 @@ body > * {
     flex: 1;
     z-index: 1;
     transition: flex 1s ease-out 0.1s, z-index 0.3s;
-    cursor: pointer;
     overflow: hidden;
+}
+
+.projectCard:hover{
+    flex: 1 1 72%;
+
+    z-index: 2;
+}
+
+.projectCard__content{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding: 2vh 0;
 }
 
 #websiteCard{
@@ -169,12 +185,6 @@ body > * {
     font-family: "osrs", "osrs--small";
 }
 
-.projectCard:hover{
-    flex: 1 1 100vh;
-    height: 80vh;
-    z-index: 2;
-}
-
 .projectCard__body{
     position: absolute;
     inset: 0;
@@ -182,11 +192,12 @@ body > * {
     height: 100%;
     display: flex;
     justify-content: start;
-    align-items: end;
+    align-items: center;
+    text-align: left;
+    gap: 4%;
     padding: 1.4rem;
     opacity: 0;
     transition: opacity 0.678s linear 0.33s;
-    pointer-events: none;
     overflow: hidden;
 }
 
@@ -195,9 +206,11 @@ body > * {
     transition: opacity .678s linear .33s;
 }
 
-.projectCard{
-    
+.projectCard__preview{
+    height: 74%;
+    width: auto;
 }
+
 
 h1{
     margin: 0px;
