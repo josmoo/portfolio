@@ -113,7 +113,7 @@ body > * {
     font-size: clamp(4rem, 6vw + .05rem, 7rem);
 }
 
-.bioContainer { 
+.introuctionContainer__bio { 
     width: 66%;
 }
 
@@ -199,7 +199,7 @@ body > * {
     align-items: center;
     text-align: left;
     gap: 4%;
-    padding: 4em 1.4em 1.4em;
+    padding: 4em 3em 1.4em;
     opacity: 0;
     transition: opacity 0.678s linear 0.33s;
     overflow: hidden;
@@ -219,7 +219,7 @@ body > * {
 }
 
 .projectCard__bio{
-    flex: 3 0 auto;
+    flex: 3 1 auto;
 }
 
 .resumeContainer{
@@ -266,6 +266,7 @@ p, li{
 @media (max-width: 600px){
     .projectCard__body{
         flex-direction: column;
+        padding: 3.8em 1.4em 1.4em;
     }   
     p{
         margin-bottom: .2em;
