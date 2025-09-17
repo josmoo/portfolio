@@ -123,6 +123,7 @@ body > * {
     text-align: center;
     align-items: center;
     padding: 4rem;
+    gap: 1vh;
     
 }
 
@@ -130,11 +131,16 @@ body > * {
     font-size: clamp(2rem, 4vw + .05rem, 4rem);
 }
 
+.projectsContainer > h3 {
+    font-size: clamp(.7rem, 1.4vw + .02rem, 1.4rem);
+}
+
 .projectCardsContainer{
     display: flex;
     flex-direction: column;
     height: 74vh;
     width: 74vw;
+
     overflow: hidden;
     border-radius: 20px;
 }
@@ -209,8 +215,23 @@ body > * {
 
 .resumeContainer{
     flex-direction: column;
+    align-items: center;
+    padding: 4rem 4vw;
 }
 
+.resumeImage{
+    width: 64%;
+
+}
+
+.resumeContainer  button {
+    border: none;
+    border-radius: 5px;
+    background-color: #F4F9FF;
+    color: #14191F;
+    padding: .2em .4em;
+    margin-top: 1em;
+}
 
 h1{
     margin: 0px;
