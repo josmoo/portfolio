@@ -77,12 +77,12 @@ body > * {
 .heroImageMask{
     position: absolute;
     inset: 0;
-    -webkit-mask: url("https://i.imgur.com/CIFTGQw.png");
+    -webkit-mask: url("https://res.cloudinary.com/damqvg9ms/image/upload/v1758163174/antiheroMask_rplxop.png");
     -webkit-mask-position: center;
     -webkit-mask-size: cover;
    
-    mask: url("https://i.imgur.com/CIFTGQw.png");
-    mask-position: center;
+    mask: url("https://res.cloudinary.com/damqvg9ms/image/upload/v1758163174/antiheroMask_rplxop.png");
+    mask-position: bottom;
     mask-size: cover;
 }
 
