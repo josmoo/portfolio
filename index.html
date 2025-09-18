@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joshua Moore | Aspiring software engineer</title>
+    <link rel="icon" href="./img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href = "style.css">
     <script src = "script.js" defer></script>
 </head>
@@ -38,7 +39,7 @@
     </div>
     <div class = "projectsContainer" id = "projects">
         <h1 class = "fadeIn">Here's some of my projects:</h1>
-        <h3 class = "fadeIn">Hover over one to learn more!</h3>
+        <h3 class = "fadeIn">Interact with one to learn more!</h3>
         <div class = "projectCardsContainer fadeIn">
 
             <div class = "projectCard" id = "websiteCard">
@@ -47,11 +48,11 @@
                     <div class = "projectCard__body">
                         <img class = "projectCard__preview" src = "./img/portfolio.png">
                         <div class = "projectCard__bio">
-                            <p>This website was entirely made by myself with html, css, and javascript. It's
+                            <p>I made this website with entirely html, css, and javascript. It's
                                 open source, and you can check out the repository
                                 <a href= "https://github.com/josmoo/portfolio" target = "_blank">here</a>.</p>
-                            <p>Building this website gave me the chance to practice more web development. It was amazing to learn more about html and css! I had the 
-                                opportunity BEM and FLIP animations, although I didn't fully conform to the former. I also ended up switching off of FLIP animations to CSS 
+                            <p>Building this website gave me the chance to practice more web development. It was amazing to learn more about html and css! I had the opportunity 
+                                to learn BEM and FLIP animations, although I didn't fully conform to the former. I also ended up switching off of FLIP animations to CSS 
                                 animations for easier compatibility with Firefox. Nonetheless, I thoroughly enjoyed learning about both. There's still a few bugs to be solved,  
                                 improvements to be made, and hopefully more projects to add! Thanks for checking it out.</p>
                         </div>
@@ -61,7 +62,7 @@
 
             <div class = "projectCard" id = "ytSearchCard">
                 <div class = "projectCard__content">
-                    <h2 class = "projectCard__title">A youtube playlist searcher!</h2>
+                    <h2 class = "projectCard__title">Youtube playlist searcher</h2>
                     <div class = "projectCard__body">
                         <img class = "projectCard__preview" src = "./img/ytplaylist.png">
                         <div class = "projectCard__bio">
@@ -70,16 +71,34 @@
                                 <ul>
                                     <li>Countless frustrations trying to find <em><b>that one recipe</b></em> in my huge cooking playlist</li>
                                     <li>Being unable to pinpoint the exact exercise video I've been looking for</li>
-                                    <li>And even just random <a href="https://www.reddit.com/r/YoutubeMusic/comments/12xq5i0/can_i_search_in_my_own_playlist/" target="_blank">angry reddit threads</a></li>
+                                    <li>And even just random <a href="https://www.reddit.com/r/YoutubeMusic/comments/12xq5i0/can_i_search_in_my_own_playlist/" target="_blank">
+                                        angry reddit threads</a></li>
                                 </ul></p>
-                            <p>It's free to use, check it out <a href="https://josmoo.github.io/yt-playlist-searcher/" target="_blank">here</a>!</p>
-                            <p>Or if you're more interested in the source code, <a href= "https://github.com/josmoo/yt-playlist-searcher" target="_blank">here's the repository</a>.</p> 
-                    
+
+                            <p>If you're interested in the source code, <a href= "https://github.com/josmoo/yt-playlist-searcher" target="_blank">here's the repository</a>.</p> 
+                            <p>It's free to use, check it out on GitHub Pages <a href="https://josmoo.github.io/yt-playlist-searcher/" target="_blank">here</a>! I'm also hosting 
+                                the website on an ESP32, check out the project below if you rather access it there.</p>
                         </div>
                     </div>
                 </div>
             </div>
         
+            <div class = "projectCard" id = "esp32Card">
+                <div class = "projectCard__content">
+                    <h2 class = "projectCard__title">ESP32 web server</h2>
+                    <div class = "projectCard__body">
+                        <img class = "projectCard__preview" src = "./img/esp32.jpg">
+                        <div class = "projectCard__bio">
+                            <p>I'm using an ESP32 to host my youtube playlist searcher! It turned out to be significantly easier than I thought it'd be, but I 
+                                still had fun regardless. It's hosting a static website via TCP. Setting this up also gave me the opportunity to learn 
+                                about port forwarding and DNS records. 
+                                <a href= "https://github.com/josmoo/esp32-webserver" target = "_blank">Here's the repository</a>, and you can check out the website here: 
+                                <a href= "http://ytplaylistsearch.xyz" target = "_blank">ytplaylistsearch.xyz</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class = "projectCard" id = "alerterCard">
                 <div class = "projectCard__content">
                     <h2 class = "projectCard__title">AoC Alerter</h2>
@@ -89,7 +108,8 @@
                             <p>I actively maintain a plugin for an open source client called RuneLite. This plugin was 
                                 inspired by my own frustrations, but also frustrations of friends. It is currently sitting 
                                 at 6,500+ active installs, and users sometimes leave thanks or suggestions for improvements, 
-                                which I've appreciated and implemented. The repository can be seen
+                                which I've appreciated and implemented. In addition to improving its functionality, I've also enjoyed improving the quality 
+                                and efficiency of its code over the years. The repository can be seen
                                 <a href= "https://github.com/josmoo/AmuletOfChemistryAlerter" target = "_blank">here</a>.</p>
                         </div>
                     </div>
@@ -101,7 +121,7 @@
     <div class = "resumeContainer" id = "resume">
         <h1></h1>
         <img class = "resumeImage fadeIn" src = "./img/resume.jpg">
-        <form method = "get" action = "./downloads/resume.pdf"  target = "_blank">
+        <form method = "get" action = "./downloads/Resume☺JoshMoore.pdf"  target = "_blank">
             <button type = "submit">Download resume</button>
         </form>
     </div>
