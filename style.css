@@ -232,14 +232,19 @@ body > * {
 .resumeContainer{
     flex-direction: column;
     align-items: center;
-    justify-self: center;
-    width: 80%;
     padding: 4rem 4vw;
 }
 
 .resumeImage{
     height: 80vh;
     width: auto;
+}
+
+@media (max-aspect-ratio: .8) {
+    .resumeImage{
+        height: auto;
+        width: 80vw;
+    }
 }
 
 .resumeContainer  button {
