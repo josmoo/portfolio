@@ -268,7 +268,7 @@ p, ul{
     font-size: clamp(.8em, 1vw + .44em, 2em);
 }
 
-a:link{
+.projectCard :link{
     color: #1848FF;
 }
 
