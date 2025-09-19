@@ -263,8 +263,8 @@ ul{
     padding-left: 1.2em;
 }
 
-p, li{
-    margin-bottom: 1em;
+p, ul{
+    margin-bottom: .678em;
     font-size: clamp(.8em, 1vw + .6em, 2em);
 }
 
@@ -280,9 +280,9 @@ p, li{
 @media (max-width: 600px){
     .projectCard__body{
         flex-direction: column;
-        padding: 2.8em 1.4em 1.4em;
+        padding: 2.8em 1.2em 1.4em;
     }   
-    p,li{
+    p, li{
         margin-bottom: .2em;
     }
     .projectCardsContainer{
