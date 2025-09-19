@@ -266,7 +266,7 @@ ul{
 
 p, li{
     margin-bottom: 1em;
-    font-size: clamp(.8em, 1vw + .2em, 2em);
+    font-size: clamp(.8em, 1vw + .6em, 2em);
 }
 
 .fadeIn{
@@ -289,5 +289,11 @@ p, li{
     .projectCardsContainer{
         width: 94vw;
         height: 92vh;
+    }
+    .projectCard__preview{
+        flex: 1 3 auto;
+        max-width: 80%;
+        min-width: 50px;
+        height: auto;
     }
 }
