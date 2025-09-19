@@ -85,9 +85,8 @@ body > * {
 
 .nameText{
     text-align: center;
-    font-size: clamp(8vw, 10vw + .05rem, 14rem);
+    font-size: clamp(8vw, 11.1vw + .05rem, 14rem);
     font-weight: 900;
-    text-wrap: wrap;
     position: fixed;
     padding: 1rem;
     width: 100%;
