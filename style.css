@@ -168,6 +168,11 @@ body > * {
     color: #F4F9FF;
 }
 
+#voronoiCard{
+    background-color: #802090;
+    color: #F0FFF0;
+}
+
 #ytSearchCard{
     background-color: #441122;
     color: #F4F3F2;
